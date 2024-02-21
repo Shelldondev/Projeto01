@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*para todos os elementos receber o box-sizing(width)*/box-sizing: border-box;
+    
+}
+
+body {
+    background: linear-gradient(to right, #262626, #1e538f);
+     
+
+
+}
+body * {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+#container {
+    /*largura (width)*/ width: 500px;
+    /*Altura (height)*/ height: 712px;
+    /* Margem- define a área de margem nos quatro lados do elemento(margin) */ margin: auto;
+    padding-top: 56px;
+    margin-left: auto;
+
+
+}
+#profile img {
+    width: 112px;
+    margin: auto;
+    /*Centralizar foto (display flex)*/display: flex;
+    /*Centralizar foto (text-aligt, sem o display:block)*/
+    display: block;
+
+
+}
+#profile p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 8px;
+}
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+/* links */
+ul {
+    /* sem os pontinhos da lista (list-style)*/list-style: none;
+    flex-direction: column;
+    /* espaço entra as caixas */gap: 16px;
+    display: flex;
+    padding: 20px 0;
+    
+}
+ul li a{
+    display: flex;
+    /* para centralizar o texto*/justify-content: center;
+    /* altura da caixa*/ height: 52px;
+    /* para centralizar o texto na caixinha */align-items: center;
+
+   /* cor do fundo da caixinha*/ background: rgba(255, 255, 255, 0.1);
+    /*borda+cor da borda*/border: 1px solid rgb(255, 255, 255, 0.5);
+     /*arrendodar a borda*/border-radius: 8px;
+      /*embaçar*/backdrop-filter: blur(4px);
+       /*tirar a linha que fica embaixo dp texto*/text-decoration: none;
+       /*especifica o peso ou a intensidade da fonte*/ font-weight: 500;
+       -webkit-backdrop-filter: blur(4px);
+
+       /*fazer */background: all 0.2s;
+
+}
+/*(hover)o próprio passa o cursor do mouse sobre o elemento.*/
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid white;
+}
+/* social links */
+#social-links {
+    /* para colocar um do lado do outro e adicionar o gap*/display: flex;
+    padding: 29px 0;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+
+}
+#social-links a {
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   padding: 16px;
+
+   transition: background 0.2s;
+   border-radius: 50%;
+
+}
+
+
+#social-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    
+    
+    
+
+
+
+}
+footer {
+    padding: 24px 0;
+    text-align: center;
+
+    
+    
+}
